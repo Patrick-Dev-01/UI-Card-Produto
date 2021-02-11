@@ -12,7 +12,7 @@ body{
     background: #09161d;
 }
 
-.card{
+.first-card{
     position: relative;
     width: 350px;
     height: 420px;
@@ -21,7 +21,7 @@ body{
     overflow: hidden;
 }
 
-.card::before{
+.first-card::before{
     content: '';
     position: absolute;
     top: -50%;
@@ -32,12 +32,12 @@ body{
     transition: 0.5s;
 }
 
-.card:hover::before{
+.first-card:hover::before{
     top: -70%;
     transform: skewY(390deg);
 }
 
-.card::after{
+.first-card::after{
     content: 'Phillips';
     position: absolute;
     bottom: 0;
@@ -57,16 +57,16 @@ body{
     z-index: 1;
 }
 
-.card .imgBx img{
+.first-card .imgBx img{
     max-width: 100%;
     transition: 0.5s;
 }
 
-.card:hover .imgBx img{
+.first-card:hover .imgBx img{
     max-width: 50%;
 }
 
-.card .contentBx{
+.first-card .contentBx{
     position: relative;
     padding-top: 20px;
     display: flex;
@@ -76,7 +76,7 @@ body{
     z-index: 1;
 }
 
-.card .contentBx h1{
+.first-card .contentBx h1{
     font-size: 18px;
     color: #fff;
     font-weight: 500;
@@ -84,14 +84,14 @@ body{
     letter-spacing: 1px;
 }
 
-.card .contentBx .price{
+.first-card .contentBx .price{
     font-size: 24px;
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.card .contentBx .buy{
+.first-card .contentBx .buy{
     position: relative;
     padding: 10px 30px;
     top: 200px;
@@ -106,7 +106,7 @@ body{
     transition: 0.5s;
 }
 
-.card:hover .contentBx .buy{
+.first-card:hover .contentBx .buy{
     top: 0;
     opacity: 1;
 }
